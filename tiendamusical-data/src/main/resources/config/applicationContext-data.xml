@@ -45,7 +45,6 @@
 			<props>
 				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
 				<prop key="hibernate.show_sql">true</prop>
-				<prop key="hibernate.jdbc.time_zone">America/Peru_City</prop>
 			</props>
 		</property>
 		<property name="persistenceProvider">
@@ -66,5 +65,5 @@
 	
 	<!-- etiqueta que permite registrar las clases que se encargan las transacciones a la base de datos(DAO) -->
 	
-	<jpa:repositories base-package="com.consolecode.tiendamusicaldata.repositories" entity-manager-factory-ref="entityManagerFactory"></jpa:repositories>
+	<jpa:repositories base-package="com.consolecode.tiendamusicaldata.dao" entity-manager-factory-ref="entityManagerFactory"></jpa:repositories>
 </beans>
